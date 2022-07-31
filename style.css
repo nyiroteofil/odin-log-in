@@ -1,0 +1,27 @@
+.banner {
+    height: 100vw;
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-image: url(./images/hans-ripa-7vb8YRXPdOQ-unsplash.jpg);
+}
+
+.log-in-section {
+    height: 100vw;
+    background-color: rgb(134, 134, 134);
+}
+
+.log-in-header {
+    background-color: black;
+    height: 15vh;
+    color: silver;
+    text-align: center;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
