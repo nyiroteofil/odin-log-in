@@ -1,5 +1,12 @@
+
+body {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+/*---Left side (banner)---*/
 .banner {
-    height: 100vhh;
+    height: 100vh;
     background-image: url(./images/nathan-dumlao-XOhI_kW_TaM-unsplash.jpg);
     background-size: cover;
 }
@@ -29,7 +36,7 @@
 footer {
     background-color: rgba(109, 38, 10, 0.89);
     position: relative;
-    top: 85.5vh;
+    top: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,12 +52,122 @@ footer {
     color: rgb(231, 152, 48);
 }
 
+/*---Rigth side log in*/
+
 .log-in-section {
     height: 100vh;
-    background-color: rgb(131, 78, 48);
+    background: linear-gradient(60deg, rgb(150, 95, 58), rgb(117, 54, 3));
 }
 
-body {
+.caption-header {
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 3vw;
+    color:rgba(230, 145, 34, 0.89);
+}
+
+
+.caption-header > p {
+    font-family: 'pacifico', Arial, Helvetica, sans-serif;
+    color:rgb(224, 159, 121)
+}
+
+.caption {
+    font-size: 30px;
+    text-align: center;
+}
+
+hr {
+    border: rgb(117, 46, 25) solid 1px;
+}
+
+form {
+    margin-top: 15px;
+}
+
+fieldset {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5vh;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    justify-content: center;
+    border: none;
+}
+
+input[type="text"], input[type="telephone"], input[type="email"], input[type="password"] {
+    width: 45px;
+    margin: 0 auto;
+    transition: width 0.3s ease-in-out;
+    text-align: center;
+    max-height: 25px;
+    border-radius: 15px;
+}
+
+input[type="text"]:focus, input[type="telephone"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    width: 130px;
+    color:rgb(117, 46, 25);
+    font-size: 15px
+}
+
+label {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+form {
+    background-image: url(./images/mike-kenneally-tNALoIZhqVM-unsplash.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    border: red solid 1px;
+    margin: 10px;
+}
+
+input[type="submit"] {
+    width: 80px;
+    height: 30px;
+    margin: 15px;
+    border: 1px black solid;
+    border-radius: 15px;
+    background-color: rgb(168, 136, 122);
+}
+
+.button-wraper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"]:invalid, input[type="telephone"]:invalid, input[type="email"]:invalid, input[type="password"]:invalid {
+    border: rgba(250, 4, 4, 0.897) solid 1px;
+    background-color: rgb(161, 83, 69);
+}
+
+input[type="text"]:valid, input[type="telephone"]:valid, input[type="email"]:valid, input[type="password"]:valid {
+    border: rgba(4, 250, 4, 0.897) solid 2.5px;
+    background-color: rgb(123, 179, 123);
+}
+
+
+
+/*For mobiles*/
+@media only screen and (max-width: 700px) {
+    body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .banner {
+        width: 100vw;
+    }
+
+    .log-in-section {
+        width: 100vw;
+    }
+
 }
