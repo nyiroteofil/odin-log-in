@@ -164,25 +164,39 @@ input[type="text"]:valid, input[type="telephone"]:valid, input[type="email"]:val
     color: rgb(194, 148, 24);
     background-color: rgba(160, 56, 24, 0.658);
     border-radius: 20px;
-    width: 360px;
+    width: 80%;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 a[href="#"] {
     text-decoration: none;
     color:rgb(226, 215, 52);
     font-family: 'pacifico';
+    transition: 0.6s ease-in-out;
+}
 
+a[href="#"]:hover {
+    position: relative;
+    top: -4px;
+    color: red;
 }
 
 
+
 /*For mobiles*/
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
     
     body {
         display: flex;
         flex-wrap: wrap;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
+
+      ::-webkit-scrollbar {
+        display: none;
+      }
 
     footer {
         top: 60vh;
@@ -191,10 +205,14 @@ a[href="#"] {
     .banner {
         width: 100vw;
         padding-top: 30%;
+        overflow: visible;
     }
 
     .log-in-section {
         width: 100vw;
+        overflow-x: hidden;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
 
     .banner-logo {
