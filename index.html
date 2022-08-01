@@ -42,17 +42,22 @@
                 <input type="telephone" id="tel-num" placeholder="70 123 4567">
                 <input type="email" id="email" placeholder="example@xyz.com" required>
             </fieldset>
+            
             <fieldset>
                 <label for="password1">Password</label>
                 <label for="password2">Repeat password</label>
-                <input type="password" minlength="8" maxlength="30" id="password1" placeholder="MyPassword135" required>
+                <div class="pass-wrapper">
+                    <input type="password" minlength="8" maxlength="30" id="password1" placeholder="MyPassword135" required>
+                    <p class="error-msg"></p>
+                </div>
                 <input type="password" minlength="8" maxlength="30" id="password2" placeholder="MyPassword135" required>
             </fieldset>
 
             <div class="button-wraper">
-                <input type="submit" value="done">
+                <button type="submit">Done</button>
             </div>
-        
+
+            <p class="have-account">Already have an account? <a href="#">Click here</a></p>
         </form>
     </div>
 </body>

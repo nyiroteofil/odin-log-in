@@ -21,7 +21,7 @@ body {
     justify-content: center;
     gap: 30px;
     position: relative;
-    top: 40%
+    top: 30%
 }
 
 .logo {
@@ -65,6 +65,7 @@ footer {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 3vw;
     color:rgba(230, 145, 34, 0.89);
+    margin-top: 80px;
 }
 
 
@@ -127,7 +128,7 @@ form {
     margin: 10px;
 }
 
-input[type="submit"] {
+button {
     width: 80px;
     height: 30px;
     margin: 15px;
@@ -153,21 +154,47 @@ input[type="text"]:valid, input[type="telephone"]:valid, input[type="email"]:val
     background-color: rgb(123, 179, 123);
 }
 
+.have-account {
+    text-align: left;
+    margin: 15px;
+    font-size: 20px;
+    color: rgb(194, 148, 24);
+    background-color: rgba(160, 56, 24, 0.658);
+    border-radius: 20px;
+    width: 360px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a[href="#"] {
+
+}
 
 
 /*For mobiles*/
 @media only screen and (max-width: 700px) {
+    
     body {
         display: flex;
         flex-wrap: wrap;
     }
 
+    footer {
+        top: 60vh;
+    }
+
     .banner {
         width: 100vw;
+        padding-top: 30%;
     }
 
     .log-in-section {
         width: 100vw;
+    }
+
+    .banner-logo {
+        z-index: 1;
+        position: sticky;
+        top: 5%;
     }
 
 }
