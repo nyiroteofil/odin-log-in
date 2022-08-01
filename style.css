@@ -9,6 +9,7 @@ body {
     height: 100vh;
     background-image: url(./images/nathan-dumlao-XOhI_kW_TaM-unsplash.jpg);
     background-size: cover;
+    overflow: hidden;
 }
 
 .banner-logo {
